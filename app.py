@@ -45,5 +45,5 @@ def success():
         return render_template("index.html", text="Email adress alredy used!")
 
 if __name__=='__main__':
-    app.debug= True
+    app.debug= False
     app.run()
