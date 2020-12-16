@@ -7,8 +7,7 @@ from send_email import send_email
 
 app=Flask(__name__)
 
-app.config['SQLALCHEMY_DATABASE_URI']="postgres://pesfuxjbkpuhzy:45c6239f8cd35454aa5fbfed89cc43e69ca6c7bdfa1a0ca2658668d784680a45@ec2-34-204-121-199.compute-1.amazonaws.com:5432/df7sso1g5qfqc4?sslmode=require"
-#app.config['SQLALCHEMY_DATABASE_URI']="postgresql://postgres:<passw>@localhost:5433/height_api"
+app.config['SQLALCHEMY_DATABASE_URI']="postgresql://postgres:<passw>@localhost:5433/height_api"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=True
 db=SQLAlchemy(app)
 migrate = Migrate(app, db)
