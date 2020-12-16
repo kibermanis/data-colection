@@ -42,7 +42,7 @@ def success():
             count=db.session.query(Data).count()
             send_email(email, height, average_height, count) # sends email using SMTP
             return render_template("success.html")
-        return render_template("index.html", text="Email adress alredy used!")
+        return render_template("index.html", text="Email address already used!")
 
 if __name__=='__main__':
     app.debug= False
